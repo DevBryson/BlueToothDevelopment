@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.basil.bluetoothdevelopment">
+
+    <!-- 6.0后蓝牙权限需要 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- 显示悬浮窗 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 拦截点击事件 -->
+    <uses-permission
+        android:name="android.permission.INJECT_EVENTS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- 为了能存储crash日志，增加个写入的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- exported:要求必须为false，为true则会报安全异常。 -->
+        <!-- grantUriPermissions:true，表示授予 URI 临时访问权限。 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.basil.bluetoothdevelopment.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <!-- 启动页面 -->
+        <activity
+            android:name=".ui.activity.ApplicationActivity"
+            android:theme="@style/FullWindowTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 欢迎界面 -->
+        <activity
+            android:name=".ui.activity.WelcomeActivity"
+            android:theme="@style/FullWindowTheme" />
+        <activity android:name=".ui.activity.DeviceListActivity" />
+        <activity android:name=".ui.activity.MouseActivity" />
+        <activity android:name=".MainActivity" />
+
+        <!-- 为了使用AutoLayout，先设计设计稿的分辨率 -->
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+
+        <activity android:name=".ui.activity.SettingActivity" />
+        <activity android:name=".ui.activity.DataActivity" />
+        <activity android:name=".ui.activity.HelpActivity"></activity>
+    </application>
+
+</manifest>

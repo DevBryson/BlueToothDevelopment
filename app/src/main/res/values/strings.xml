@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">蓝牙鼠标</string>
+
+    <string name="not_connected">你没有连接到一个设备</string>
+    <string name="bt_not_enabled_leaving">蓝牙未被打开</string>
+    <string name="title_connecting">正在连接...</string>
+    <string name="title_connected_to">已连接: </string>
+    <string name="title_not_connected">断开</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">搜索设备...</string>
+    <string name="select_device">选择一个设备</string>
+    <string name="none_paired">无</string>
+    <string name="none_found">未发现设备</string>
+    <string name="title_paired_devices">已匹配的设备</string>
+    <string name="title_other_devices">其他可匹配的设备</string>
+    <string name="button_scan">搜索设备</string>
+
+
+    <!-- Options Menu -->
+    <string name="connect">连接设备</string>
+    <string name="discoverable">使设备可访问</string>
+
+    <string name="app_author"></string>
+    <string name="search_bt_devices_error">搜索蓝牙设备时出现未知错误</string>
+    <string name="title_activity_setting">设置</string>
+    <string name="setting_title">设置</string>
+    <string name="str_move">移动</string>
+    <string name="data_title">数据</string>
+
+    <string name="gn_1">左倾斜：手部（鼠标）向左扣动，持续时间超过一秒（20度&#060;角度&#060;度）\n</string>
+    <string name="gn_2">右倾斜：手部（鼠标）向右扣动，持续时间超过一秒（20度&#060;角度&#060;度）\n</string>
+    <string name="gn_3">前进：手部（鼠标）向下扣动，持续时间超过一秒（20度&#060;角度&#060;45度)\n</string>
+    <string name="gn_4">后退：手部（鼠标）向上扣动，持续时间超过一秒（20度&#060;角度&#060;45度）\n</string>
+    <string name="gn_5">翻页：手部向下快速扣动两次（20度&#060;角度&#060;45度）\n</string>
+    <string name="gn_6">点击：手部向下快速扣动一次（20度&#060;角度&#060;45度）\n</string>
+    <string name="sy">连接蓝牙传感器-通过不同的手势-执行相应的操作</string>
+    <string name="zy">1、在使用过程中，一定要按照正确的操作方法进行操作，否则难以控制鼠标\n
+                           2、停止操作时，按手机开关键即可
+    </string>
+
+</resources>

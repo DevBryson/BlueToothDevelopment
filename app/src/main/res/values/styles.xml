@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppTheme" parent="AppTheme.Base"></style>
+
+    <!-- 启动页面全屏 -->
+    <style name="FullWindowTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/themeColor</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="MatchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WrapWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- 设置页面的TextView风格 -->
+    <style name="SettingTextView">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 设置页面的Spiner风格 -->
+    <style name="SettingSpiner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- 主页面的Button风格 -->
+    <style name="MainActivityButton">
+        <item name="android:layout_width">65dp</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- 主页面TextView风格 -->
+    <style name="MainActivityText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- 数据页面的TextView风格 -->
+    <style name="DataTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/font_color</item>
+    </style>
+
+    <!-- 数据页面的Button风格 -->
+    <style name="DataButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/font_color</item>
+        <item name="android:background">@drawable/title_btn_right</item>
+    </style>
+</resources>

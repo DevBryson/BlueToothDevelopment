@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/data_top"
+        android:layout_weight="12" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="@drawable/preference_first_item">
+
+        <TextView
+            android:id="@+id/tvDataName1"
+            android:text="X轴："
+            style="@style/DataTextView"/>
+
+        <TextView
+            android:id="@+id/tvNum1"
+            android:text="0"
+            style="@style/DataTextView"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="@drawable/preference_item" >
+        <TextView
+            android:id="@+id/tvDataName2"
+            android:text="Y轴："
+            style="@style/DataTextView"/>
+
+        <TextView
+            android:id="@+id/tvNum2"
+            android:text="0"
+            style="@style/DataTextView"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="@drawable/preference_last_item" >
+        <TextView
+            android:id="@+id/tvDataName3"
+            android:text="Z轴："
+            style="@style/DataTextView" />
+
+        <TextView
+            android:id="@+id/tvNum3"
+            android:text="0"
+            style="@style/DataTextView"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:text="时间"
+            android:id="@+id/btn_time"
+            style="@style/DataButton" />
+        <Button
+            android:text="加速度"
+            android:id="@+id/btn_acceleration"
+            style="@style/DataButton"/>
+        <Button
+            android:text="角速度"
+            android:id="@+id/btn_angular_velocity"
+            style="@style/DataButton" />
+        <Button
+            android:text="角度"
+            android:id="@+id/btn_angular"
+            style="@style/DataButton" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="鼠标模式"
+        android:layout_marginTop="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_mouse"
+            android:text="自由移动模式"
+            style="@style/DataButton" />
+
+        <Button
+            android:id="@+id/btn_mouse1"
+            android:text="点击模式"
+            style="@style/DataButton" />
+    </LinearLayout>
+
+</LinearLayout>

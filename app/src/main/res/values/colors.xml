@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2094f0</color>
+    <color name="colorPrimaryDark">#2094f0</color>
+    <color name="colorAccent">#4388fc</color>
+
+    <color name="themeColor">#2094f0</color>
+    <color name="font_color">#202020</color>
+
+    <color name="white">#ffffff</color>
+    <color name="primary">#03A9F4</color>
+    <color name="divideColor">#bbbbbb</color>
+</resources>
